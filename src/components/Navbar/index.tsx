@@ -1,5 +1,6 @@
 import { INavbarItem } from "@/models/general";
 import Link from "next/link";
+import { IconMenu } from "./icons";
 
 const items: INavbarItem[] = [
   {
@@ -36,6 +37,7 @@ export default function Navbar() {
           {item.name}
         </Link>
       ))}
+      <IconMenu className="fill-primary-teal" />
     </header>
   );
 }
