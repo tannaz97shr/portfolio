@@ -32,9 +32,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   return (
     <div
-      className={`bg-primary-navy text-primary-teal
-     flex items-start md:items-center justify-start md:justify-center text-lg font-medium 
-     drop-shadow-md shadow-md shadow-secondary-navi fixed z-10
+      className={`fixed z-10 bg-primary-navy text-primary-teal
+     flex items-start md:items-center justify-start md:justify-center 
+     text-lg font-medium 
+     drop-shadow-md shadow-md shadow-secondary-navi 
+     transition-all ease-in-out
      ${
        isMenuOpen ? "md:h-12 md:w-full right-0 w-3/5 h-[100vh]" : "w-full h-12"
      }`}
@@ -42,7 +44,9 @@ export default function Navbar() {
       <div className="flex flex-col md:flex-row mt-20 md:mt-0">
         {items.map((item: INavbarItem) => (
           <Link
-            className="mx-4 hover:text-secondary-teal mb-4 md:mb-0"
+            className={`mx-4 hover:text-secondary-teal mb-4 md:mb-0 ${
+              isMenuOpen ? "flex" : "hidden"
+            } md:flex`}
             key={item.id}
             href={item.link}
           >
@@ -50,7 +54,10 @@ export default function Navbar() {
           </Link>
         ))}
       </div>
-      <button className="flex md:hidden fixed mt-4 right-4">
+      <button
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="flex md:hidden fixed mt-4 right-4"
+      >
         {isMenuOpen ? (
           <IconClose className="fill-primary-teal" />
         ) : (
