@@ -30,7 +30,7 @@ const items: INavbarItem[] = [
 ];
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
       {isMenuOpen && <Backdrop onClick={() => setIsMenuOpen(false)} />}
