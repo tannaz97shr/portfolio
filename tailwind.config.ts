@@ -21,7 +21,7 @@ const config: Config = {
         "primary-teal": "#57C5B6",
         "secondary-teal": "#159895",
         "primary-navy": "#002B5B",
-        "secondary-navi": "#1A5F7A",
+        "secondary-navy": "#1A5F7A",
         tahiti: {
           100: "#cffafe",
           200: "#a5f3fc",
