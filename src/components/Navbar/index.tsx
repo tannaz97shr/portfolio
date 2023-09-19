@@ -38,7 +38,7 @@ export default function Navbar() {
         className={`fixed z-10 bg-primary-navy text-primary-teal
      flex items-start md:items-center justify-start md:justify-center 
      text-lg font-medium 
-     drop-shadow-md shadow-md shadow-secondary-navi 
+     drop-shadow-md shadow-md shadow-secondary-navy 
      transition-all ease-in-out
      ${
        isMenuOpen ? "md:h-12 md:w-full right-0 w-3/5 h-[100vh]" : "w-full h-12"

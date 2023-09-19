@@ -1,9 +1,8 @@
 function ExperienceCard() {
   return (
-    <div className="flex h-44 w-full rounded-lg overflow-hidden mb-4">
-      <div className="flex w-1/3 bg-primary-teal">Left</div>
-      <div className="flex w-2/3 bg-primary-navy">Right</div>
-      <div></div>
+    <div className="flex flex-col md:flex-row h-56 md:h-44 w-full rounded-lg overflow-hidden mb-4">
+      <div className="flex grow-[1] bg-secondary-navy">Left</div>
+      <div className="flex grow-[2] bg-primary-navy">Right</div>
     </div>
   );
 }
