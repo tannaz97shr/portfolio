@@ -1,8 +1,20 @@
-function ExperienceCard() {
+import { IExperience } from "@/models/general";
+
+interface ExperienceCardProps {
+  exp: IExperience;
+}
+
+function ExperienceCard({ exp }: ExperienceCardProps) {
   return (
-    <div className="flex flex-col md:flex-row h-56 md:h-44 w-full rounded-lg overflow-hidden mb-4">
-      <div className="flex grow-[1] bg-secondary-navy">Left</div>
-      <div className="flex grow-[2] bg-primary-navy">Right</div>
+    <div
+      className="flex flex-col overflow-hidden rounded-md 
+    bg-primary-navy border border-secondary-navy
+    w-full lg:w-[49%] h-80 mb-6 p-4"
+    >
+      <div className="text-lg font-semibold text-primary-teal">
+        {exp.companyName}
+      </div>
+      <div className="flex">Right</div>
     </div>
   );
 }
