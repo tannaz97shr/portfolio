@@ -4,7 +4,7 @@ export const experience: IExperience[] = [
   {
     id: "5",
     companyName: "Windranger Labs",
-    startDate: "February 01, 2022 00:00:00",
+    startDate: "February 01, 2023 00:00:00",
     endDate: "August 01, 2023 00:00:00",
     role: "Front-End Developer",
     jobType: "Remote",
