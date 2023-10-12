@@ -18,6 +18,7 @@ const config: Config = {
         current: "currentColor",
         white: "#ffffff",
         backdrop: "rgba(0, 0, 0, 0.6)",
+        "tag-bg": "rgba(255, 255, 255, 0.1)",
         "primary-teal": "#57C5B6",
         "secondary-teal": "#159895",
         "primary-navy": "#002B5B",
