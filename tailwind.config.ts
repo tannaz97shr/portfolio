@@ -18,10 +18,12 @@ const config: Config = {
         current: "currentColor",
         white: "#ffffff",
         backdrop: "rgba(0, 0, 0, 0.6)",
+        "tag-bg": "rgba(255, 255, 255, 0.1)",
         "primary-teal": "#57C5B6",
         "secondary-teal": "#159895",
         "primary-navy": "#002B5B",
-        "secondary-navi": "#1A5F7A",
+        "secondary-navy": "#1A5F7A",
+        "light-grey": "#d1d1d1",
         tahiti: {
           100: "#cffafe",
           200: "#a5f3fc",
