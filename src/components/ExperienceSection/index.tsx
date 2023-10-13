@@ -1,4 +1,5 @@
 import { IExperience } from "@/models/general";
+import Header from "../UI/SectionHeader";
 import ExperienceCard from "./ExperienceCard";
 
 interface ExperienceSectionProps {
@@ -8,9 +9,7 @@ interface ExperienceSectionProps {
 function ExperienceSection({ experiences }: ExperienceSectionProps) {
   return (
     <>
-      <div className="drop-shadow-xl text-3xl font-semibold text-primary-teal mt-5 mb-8">
-        Experience
-      </div>
+      <Header>Experience</Header>
       <div className="flex flex-wrap justify-between">
         {experiences.map((item: IExperience) => (
           <ExperienceCard exp={item} key={item.id} />
