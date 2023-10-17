@@ -21,6 +21,7 @@ function BarChart() {
       datasets: [
         {
           label: "Skill (years)",
+          backgroundColor: "#1A5F7A",
           data: [...extractChartdata()],
         },
       ],
@@ -41,7 +42,11 @@ function BarChart() {
 
   return (
     <>
-      <div className="mx-auto lg:w-2/3 w-full overflow-hidden h-[25rem] bg-primary-teal p-2 rounded-md border border-primary-navy">
+      <div
+        className="mx-auto lg:w-2/3 w-full overflow-hidden
+      flex items-center
+      bg-primary-teal p-2 rounded-md border border-primary-navy"
+      >
         <canvas id="myBarChart"></canvas>
       </div>
     </>
