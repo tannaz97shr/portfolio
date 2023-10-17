@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Header from "../UI/SectionHeader";
 
 const DynamicComponent = dynamic(() => import("./BarChart"), {
   ssr: false,
@@ -7,7 +8,7 @@ const DynamicComponent = dynamic(() => import("./BarChart"), {
 function SkillsSection() {
   return (
     <>
-      <div>skills section</div>
+      <Header>Skills</Header>
       <DynamicComponent />
     </>
   );

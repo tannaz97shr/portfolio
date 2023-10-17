@@ -15,3 +15,9 @@ export interface IExperience {
   skills: string[];
   linkedin: string;
 }
+
+export interface ISkill {
+  id: number;
+  name: string;
+  years: number;
+}
