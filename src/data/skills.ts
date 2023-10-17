@@ -51,4 +51,39 @@ export const skills: ISkill[] = [
     name: "CMS",
     years: 1,
   },
+  {
+    id: 11,
+    name: "Web3",
+    years: 2,
+  },
+  {
+    id: 12,
+    name: "Webpack",
+    years: 2,
+  },
+  {
+    id: 13,
+    name: "Redux",
+    years: 4,
+  },
+  {
+    id: 14,
+    name: "React Native",
+    years: 1,
+  },
+  {
+    id: 15,
+    name: "HTML",
+    years: 7,
+  },
+  {
+    id: 16,
+    name: "CSS",
+    years: 7,
+  },
+  {
+    id: 17,
+    name: "SASS",
+    years: 6,
+  },
 ];

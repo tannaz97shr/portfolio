@@ -11,16 +11,7 @@ export const experience: IExperience[] = [
     linkedin: "",
     description:
       "Prticipated in building Mantle token (former BitDAO). Developed new features for their websites and optimize code. Helped to manage directus CMS.",
-    skills: [
-      "Next js",
-      "React js",
-      "Typescript",
-      "REST APIs",
-      "Graphql",
-      "web3",
-      "CMS",
-      "Tailwind",
-    ],
+    skills: [1, 2, 3, 6, 7, 11, 10, 9],
   },
   {
     id: "4",
@@ -32,15 +23,7 @@ export const experience: IExperience[] = [
     linkedin: "",
     description:
       "Participate in building first cryptocurrency in the country for the Central Bank of Iran",
-    skills: [
-      "Next js",
-      "React js",
-      "Typescript",
-      "REST APIs",
-      "Webpack",
-      "Redux",
-      "React Native",
-    ],
+    skills: [1, 2, 3, 5, 11, 8, 6, 12, 13, 14],
   },
   {
     id: "3",
@@ -52,15 +35,7 @@ export const experience: IExperience[] = [
     linkedin: "",
     description:
       "A Startup creating a kind of online shop mixing the idea of video making for the products. I helped with front end side of website and mnaging pannel",
-    skills: [
-      "Next js",
-      "React js",
-      "Typescript",
-      "REST APIs",
-      "Webpack",
-      "Redux",
-      "Javascript",
-    ],
+    skills: [1, 2, 3, 6, 5, 12, 13, 4],
   },
   {
     id: "2",
@@ -72,7 +47,7 @@ export const experience: IExperience[] = [
     linkedin: "",
     description:
       "Creating websites for scientific purposes. I developed various charts and maps and developed pannels for scientists",
-    skills: ["React js", "Javascript", "REST APIs", "Webpack", "Redux"],
+    skills: [2, 4, 6, 7, 12, 13],
   },
   {
     id: "1",
@@ -84,6 +59,6 @@ export const experience: IExperience[] = [
     linkedin: "",
     description:
       "worked closely with business leaders and monitored website performance and rectifying front-end issues.Turned design pages and specific components into HTML, CSS and Javascript.",
-    skills: ["HTML", "Javascript", "CSS", "SASS"],
+    skills: [15, 4, 16, 17],
   },
 ];
