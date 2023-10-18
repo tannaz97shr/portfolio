@@ -12,7 +12,7 @@ function Footer() {
         Email:{" "}
         <Link
           className="drop-shadow-xl font-semibold"
-          href="mailto:tia.shr97@gmail.com?subject=SweetWords"
+          href="mailto:tia.shr97@gmail.com"
         >
           tia.shr97@gmail.com
         </Link>
