@@ -1,5 +1,6 @@
 import ExperienceSection from "@/components/ExperienceSection";
 import HeroSection from "@/components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
 import { experience } from "@/data/experience";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       xl:w-[1200px] lg:w-[1000px] lg:mx-auto w-full px-4"
       >
         <ExperienceSection experiences={experience} />
+        <SkillsSection />
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 import { MonthNames } from "@/data/constants";
-import { IExperience } from "@/models/general";
+import { skills } from "@/data/skills";
+import { IExperience, ISkill } from "@/models/general";
 import SkillTag from "./SkillTag";
 
 interface ExperienceCardProps {
@@ -31,9 +32,14 @@ function ExperienceCard({ exp }: ExperienceCardProps) {
       </div>
       <div className="px-4 mt-4 text-sm text-light-grey">{exp.description}</div>
       <div className="flex flex-row flex-wrap px-4 mt-4">
-        {exp.skills.map((item: string) => (
-          <SkillTag key={item} name={item} />
-        ))}
+        {exp.skills.map((skillId: number) => {
+          const skillName = skills.find(
+            (skill: ISkill) => skill.id === skillId
+          );
+          if (skillName) {
+            return <SkillTag key={skillId} name={skillName.name} />;
+          }
+        })}
       </div>
     </div>
   );

@@ -12,6 +12,12 @@ export interface IExperience {
   role: string;
   jobType: string;
   description: string;
-  skills: string[];
+  skills: number[];
   linkedin: string;
+}
+
+export interface ISkill {
+  id: number;
+  name: string;
+  years: number;
 }
