@@ -1,4 +1,5 @@
 import ExperienceSection from "@/components/ExperienceSection";
+import Footer from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import { experience } from "@/data/experience";
@@ -14,6 +15,7 @@ export default function Home() {
         <ExperienceSection experiences={experience} />
         <SkillsSection />
       </div>
+      <Footer />
     </main>
   );
 }
