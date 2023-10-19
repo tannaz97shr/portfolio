@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import Button from "../UI/Button";
+import { FileDownloadLinkedin } from "./icons";
 
 export default function HeroSection() {
   return (
@@ -17,6 +21,25 @@ export default function HeroSection() {
           </span>
         </div>
         <span>Bridging Design and Technology for Impactful Websites.</span>
+        <div className="flex mt-4">
+          <Button
+            className="flex mr-3 items-center"
+            onClick={() => {
+              console.log("btn clicked");
+            }}
+          >
+            <FileDownloadLinkedin fill="#57C5B6" />
+            <span className="ml-2">Resume</span>
+          </Button>
+          <Button
+            variant="secondary"
+            onClick={() => {
+              console.log("btn clicked");
+            }}
+          >
+            Send Email
+          </Button>
+        </div>
       </div>
       <div className="drop-shadow-xl h-52 w-52 mb-4 lg:mb-0 relative ml-5 rounded-full overflow-hidden">
         <Image
