@@ -1,7 +1,7 @@
 interface ButtonProps {
   variant?: "primary" | "secondary";
   className?: string;
-  onClick: Function;
+  onClick?: Function;
   children: React.ReactNode;
 }
 
@@ -13,7 +13,7 @@ function Button({ variant, onClick, children, className }: ButtonProps) {
           ? "text-primary-navy"
           : "bg-primary-navy text-primary-teal"
       } ${className && className}`}
-      onClick={() => onClick()}
+      onClick={onClick ? () => onClick() : () => {}}
     >
       {children}
     </button>

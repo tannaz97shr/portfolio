@@ -27,25 +27,13 @@ export default function HeroSection() {
             download="Tannaz_Shirzadi_Frontend_Resume"
             target="_blank"
           >
-            <Button
-              className="flex mr-3 items-center"
-              onClick={() => {
-                console.log("btn clicked");
-              }}
-            >
+            <Button className="flex mr-3 items-center">
               <FileDownloadLinkedin fill="#57C5B6" />
               <span className="ml-2">Resume</span>
             </Button>
           </a>
           <a href="mailto:tia.shr97@gmail.com">
-            <Button
-              variant="secondary"
-              onClick={() => {
-                console.log("btn clicked");
-              }}
-            >
-              Send Email
-            </Button>
+            <Button variant="secondary">Send Email</Button>
           </a>
         </div>
       </div>
