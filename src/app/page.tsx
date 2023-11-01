@@ -3,6 +3,12 @@ import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
 import { experience } from "@/data/experience";
 
+export const metadata = {
+  title: "About",
+  icons: "/front-end.png",
+  description:
+    "Discover the technical underpinnings of my portfolio. Explore the tools, technologies, and responsive design that power this showcase of my front-end development skills.",
+};
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
