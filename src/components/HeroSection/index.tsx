@@ -22,23 +22,31 @@ export default function HeroSection() {
         </div>
         <span>Bridging Design and Technology for Impactful Websites.</span>
         <div className="flex mt-4">
-          <Button
-            className="flex mr-3 items-center"
-            onClick={() => {
-              console.log("btn clicked");
-            }}
+          <a
+            href={"/resume.pdf"}
+            download="Tannaz_Shirzadi_Frontend_Resume"
+            target="_blank"
           >
-            <FileDownloadLinkedin fill="#57C5B6" />
-            <span className="ml-2">Resume</span>
-          </Button>
-          <Button
-            variant="secondary"
-            onClick={() => {
-              console.log("btn clicked");
-            }}
-          >
-            Send Email
-          </Button>
+            <Button
+              className="flex mr-3 items-center"
+              onClick={() => {
+                console.log("btn clicked");
+              }}
+            >
+              <FileDownloadLinkedin fill="#57C5B6" />
+              <span className="ml-2">Resume</span>
+            </Button>
+          </a>
+          <a href="mailto:tia.shr97@gmail.com">
+            <Button
+              variant="secondary"
+              onClick={() => {
+                console.log("btn clicked");
+              }}
+            >
+              Send Email
+            </Button>
+          </a>
         </div>
       </div>
       <div className="drop-shadow-xl h-52 w-52 mb-4 lg:mb-0 relative ml-5 rounded-full overflow-hidden">
