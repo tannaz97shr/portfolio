@@ -4,7 +4,7 @@ import SkillsSection from "@/components/SkillsSection";
 import { experience } from "@/data/experience";
 
 export const metadata = {
-  title: "About",
+  title: "Tannaz Portfolio",
   icons: "/front-end.png",
   description:
     "Discover the technical underpinnings of my portfolio. Explore the tools, technologies, and responsive design that power this showcase of my front-end development skills.",
