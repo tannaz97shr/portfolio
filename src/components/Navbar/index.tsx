@@ -7,30 +7,31 @@ import Backdrop from "../UI/Backdrop";
 import { IconClose, IconMenu } from "./icons";
 
 const items: INavbarItem[] = [
-  {
-    id: "about",
-    name: "About Me",
-    link: "/about",
-  },
+  // {
+  //   id: "about",
+  //   name: "About Me",
+  //   link: "/about",
+  // },
   {
     id: "experience",
     name: "Experience",
-    link: "/experience",
+    link: "#experience",
   },
   {
-    id: "blog",
-    name: "Blog",
-    link: "/blog",
+    id: "skills",
+    name: "Skills",
+    link: "#skills",
   },
-  {
-    id: "contact",
-    name: "Contact",
-    link: "/contact",
-  },
+  // {
+  //   id: "contact",
+  //   name: "Contact",
+  //   link: "/contact",
+  // },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       {isMenuOpen && <Backdrop onClick={() => setIsMenuOpen(false)} />}
@@ -52,6 +53,7 @@ export default function Navbar() {
               } md:flex`}
               key={item.id}
               href={item.link}
+              onClick={() => setIsMenuOpen(false)}
             >
               {item.name}
             </Link>

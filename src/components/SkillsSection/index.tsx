@@ -9,7 +9,7 @@ const DynamicComponent = dynamic(() => import("./BarChart"), {
 function SkillsSection() {
   return (
     <>
-      <Header>Skills</Header>
+      <Header id="skills">Skills</Header>
       <Description>
         In the dynamic world of front-end development, having the right skills
         is crucial. My skill chart provides a visual representation of my

@@ -10,7 +10,7 @@ interface ExperienceSectionProps {
 function ExperienceSection({ experiences }: ExperienceSectionProps) {
   return (
     <>
-      <Header>Experience</Header>
+      <Header id="experience">Experience</Header>
       <Description>
         Explore my journey as a front-end developer, where I&apos;ve honed my
         skills and delivered exceptional results for various projects. Each card

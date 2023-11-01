@@ -1,10 +1,14 @@
 interface HeaderProps {
   children: React.ReactNode;
+  id?: string;
 }
 
-function Header({ children }: HeaderProps) {
+function Header({ children, id }: HeaderProps) {
   return (
-    <div className="drop-shadow-xl text-3xl font-semibold text-primary-teal mt-10 mb-8">
+    <div
+      id={id && id}
+      className="drop-shadow-xl text-3xl font-semibold text-primary-teal mt-10 mb-8"
+    >
       {children}
     </div>
   );
