@@ -21,7 +21,7 @@ export default function HeroSection() {
           </span>
         </div>
         <span>Bridging Design and Technology for Impactful Websites.</span>
-        <div className="flex mt-4">
+        <div className="flex items-center mt-4">
           <a
             href={"/resume.pdf"}
             download="Tannaz_Shirzadi_Frontend_Resume"
