@@ -14,10 +14,10 @@ function ExperienceCard({ exp }: ExperienceCardProps) {
     <div
       className="flex flex-col overflow-hidden rounded-md 
     bg-primary-navy border border-secondary-navy
-    w-full lg:w-[49%] h-80 mb-6"
+    w-full lg:w-[49%] min-h-80 mb-6"
     >
       <div className="flex flex-col p-4 bg-secondary-navy">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row flex-wrap items-center">
           <span className="text-lg font-semibold text-primary-teal mr-2">
             {exp.companyName}
           </span>
