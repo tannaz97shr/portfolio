@@ -26,18 +26,6 @@ export const experience: IExperience[] = [
     skills: [1, 2, 3, 5, 11, 8, 6, 12, 13, 14],
   },
   {
-    id: "3",
-    companyName: "Stage Try",
-    startDate: "March 01, 2021 00:00:00",
-    endDate: "June 01, 2021 00:00:00",
-    role: "Front-End Developer",
-    jobType: "Remote",
-    linkedin: "",
-    description:
-      "A Startup creating a kind of online shop mixing the idea of video making for the products. I helped with front end side of website and mnaging pannel",
-    skills: [1, 2, 3, 6, 5, 12, 13, 4],
-  },
-  {
     id: "2",
     companyName: "SRICO (Soroosh Rayaneh Iranian)",
     startDate: "January 01, 2020 00:00:00",
