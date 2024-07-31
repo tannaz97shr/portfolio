@@ -2,6 +2,18 @@ import { IExperience } from "@/models/general";
 
 export const experience: IExperience[] = [
   {
+    id: "6",
+    companyName: "Barsam IT Consulting",
+    startDate: "October 01, 2023 00:00:00",
+    endDate: "July 01, 2023 00:00:00",
+    role: "Front-End Developer",
+    jobType: "Remote",
+    linkedin: "",
+    description:
+      "Developed dynamic and responsive user interfaces, achieving a 20% increase in user engagement and optimizing performance with React.js, Next.js, and TypeScript.",
+    skills: [1, 2, 3, 5, 6, 7, 11, 10, 9, 13],
+  },
+  {
     id: "5",
     companyName: "Windranger Labs",
     startDate: "February 01, 2023 00:00:00",
